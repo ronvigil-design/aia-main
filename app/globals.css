@@ -111,6 +111,8 @@ p {
   gap: 10px;
   padding: 0 24px;
   border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 0.82rem;
   font-weight: 680;
   letter-spacing: 0.015em;
@@ -126,6 +128,7 @@ p {
 }
 
 .button:focus-visible,
+button:focus-visible,
 a:focus-visible,
 summary:focus-visible {
   outline: 2px solid var(--gold-light);
@@ -289,6 +292,17 @@ summary:focus-visible {
 .mobile-menu nav a {
   padding: 12px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-menu nav .mobile-join-link {
+  padding: 12px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
 }
 
 .hero {
@@ -943,8 +957,156 @@ summary:focus-visible {
   font-size: 0.72rem;
 }
 
-.footer-grid a:hover {
+.footer-grid .footer-text-button {
+  display: block;
+  margin-bottom: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  text-align: left;
+}
+
+.footer-grid a:hover,
+.footer-grid .footer-text-button:hover {
   color: var(--gold-light);
+}
+
+.join-modal-backdrop {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  overflow-y: auto;
+  padding: 32px;
+  background: rgba(0, 6, 11, 0.82);
+  backdrop-filter: blur(14px);
+  place-items: center;
+}
+
+.join-modal {
+  position: relative;
+  width: min(880px, 100%);
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  border: 1px solid rgba(227, 172, 74, 0.36);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(46, 112, 255, 0.13), transparent 28%),
+    #f8f6f1;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.55);
+}
+
+.join-modal-close {
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  right: 20px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(7, 16, 24, 0.16);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  place-items: center;
+}
+
+.join-modal-heading {
+  padding: 54px 64px 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.join-modal-heading h2 {
+  margin-bottom: 12px;
+  font-size: clamp(2.8rem, 6vw, 4.7rem);
+}
+
+.join-modal-heading > p:last-child {
+  max-width: 560px;
+  margin: 0;
+  color: #657078;
+}
+
+.join-form {
+  display: grid;
+  gap: 20px;
+  padding: 34px 64px 54px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.join-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.join-form label > span {
+  color: #465057;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  width: 100%;
+  border: 1px solid rgba(7, 16, 24, 0.18);
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.86rem;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.join-form input,
+.join-form select {
+  min-height: 48px;
+  padding: 0 13px;
+}
+
+.join-form textarea {
+  min-height: 112px;
+  padding: 13px;
+  resize: vertical;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(214, 154, 53, 0.15);
+}
+
+.join-form-wide {
+  grid-column: 1 / -1;
+}
+
+.join-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  padding-top: 10px;
+}
+
+.join-form-footer p {
+  max-width: 430px;
+  margin: 0;
+  color: #6b747a;
+  font-size: 0.7rem;
+}
+
+.join-form-footer .button {
+  flex: 0 0 auto;
 }
 
 .footer-bottom {
@@ -1200,6 +1362,45 @@ summary:focus-visible {
 
   .footer-brand {
     grid-column: auto;
+  }
+
+  .join-modal-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .join-modal {
+    width: 100%;
+    max-height: 92vh;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  .join-modal-heading {
+    padding: 48px 24px 25px;
+  }
+
+  .join-modal-heading h2 {
+    font-size: 3.2rem;
+  }
+
+  .join-form {
+    padding: 25px 24px 38px;
+    grid-template-columns: 1fr;
+  }
+
+  .join-form-wide {
+    grid-column: auto;
+  }
+
+  .join-form-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .join-form-footer .button {
+    width: 100%;
   }
 }
 

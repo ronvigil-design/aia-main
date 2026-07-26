@@ -1,3 +1,5 @@
+import { JoinAiaButton } from "./JoinAiaButton";
+
 const platformCompanies = [
   {
     eyebrow: "AIA Talent Twins",
@@ -108,9 +110,12 @@ function Header() {
             </a>
           ))}
         </nav>
-        <a className="button button-gold nav-cta" href="#join">
+        <JoinAiaButton
+          className="button button-gold nav-cta"
+          source="Header navigation"
+        >
           Join AIA
-        </a>
+        </JoinAiaButton>
         <details className="mobile-menu">
           <summary aria-label="Open navigation">
             <span />
@@ -128,7 +133,12 @@ function Header() {
                 {label}
               </a>
             ))}
-            <a href="#join">Join AIA</a>
+            <JoinAiaButton
+              className="mobile-join-link"
+              source="Mobile navigation"
+            >
+              Join AIA
+            </JoinAiaButton>
           </nav>
         </details>
       </div>
@@ -153,9 +163,9 @@ function Hero() {
           opportunities.
         </p>
         <div className="hero-actions">
-          <a className="button button-gold" href="#join">
+          <JoinAiaButton className="button button-gold" source="Hero">
             Join AIA <span aria-hidden="true">↗</span>
-          </a>
+          </JoinAiaButton>
           <a className="button button-ghost" href="#platform">
             Explore the AIA Platform
           </a>
@@ -413,12 +423,12 @@ export default function Home() {
               control, and opportunities you deserve.
             </p>
             <div className="hero-actions">
-              <a
+              <JoinAiaButton
                 className="button button-gold"
-                href="mailto:hello@aiatalent.com?subject=Join%20AIA"
+                source="Closing call to action"
               >
                 Join AIA Today <span aria-hidden="true">↗</span>
-              </a>
+              </JoinAiaButton>
               <a
                 className="button button-ghost"
                 href="mailto:hello@aiatalent.com?subject=AIA%20Consultation"
@@ -451,7 +461,12 @@ export default function Home() {
             <a href="#talent">For Talent</a>
             <a href="#agencies">For Agencies</a>
             <a href="#legacy">Legacy Services</a>
-            <a href="#join">Join AIA</a>
+            <JoinAiaButton
+              className="footer-text-button"
+              source="Footer navigation"
+            >
+              Join AIA
+            </JoinAiaButton>
           </div>
           <div>
             <h3>Company</h3>
