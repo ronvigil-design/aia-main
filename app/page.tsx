@@ -8,7 +8,7 @@ const platformCompanies = [
     className: "twins",
     description:
       "Create authorized digital versions of real people for film, advertising, gaming, music, sports, education, and more.",
-    href: "https://www.aiatalenttwins.com",
+    href: "https://aia-talent.turner-globa-6193.chatgpt.site/",
     cta: "Visit Talent Twins",
   },
   {
@@ -18,7 +18,7 @@ const platformCompanies = [
     className: "vault",
     description:
       "Protect digital assets, consent, permissions, and identity records with secure, talent-first controls.",
-    href: "https://www.aiatalentvault.com",
+    href: "https://aia-talent-vault-hq.turner-globa-6193.chatgpt.site/",
     cta: "Visit Talent Vault",
   },
   {
@@ -28,7 +28,7 @@ const platformCompanies = [
     className: "exchange",
     description:
       "Connect approved digital talent with qualified global opportunities and clear commercial terms.",
-    href: "https://www.aiatalentexchange.com",
+    href: "https://aia-talent-exchange.turner-globa-6193.chatgpt.site/",
     cta: "Visit Talent Exchange",
   },
 ];
@@ -74,9 +74,9 @@ const opportunities = [
 
 const navItems = [
   ["Home", "#top"],
-  ["Talent Twins", "https://www.aiatalenttwins.com"],
-  ["Talent Vault", "https://www.aiatalentvault.com"],
-  ["Talent Exchange", "https://www.aiatalentexchange.com"],
+  ["Talent Twins", "https://aia-talent.turner-globa-6193.chatgpt.site/"],
+  ["Talent Vault", "https://aia-talent-vault-hq.turner-globa-6193.chatgpt.site/"],
+  ["Talent Exchange", "https://aia-talent-exchange.turner-globa-6193.chatgpt.site/"],
   ["For Talent", "#talent"],
   ["For Agencies", "#agencies"],
   ["Legacy", "#legacy"],
@@ -452,9 +452,9 @@ export default function Home() {
           </div>
           <div>
             <h3>AIA Platform</h3>
-            <a href="https://www.aiatalenttwins.com" target="_blank" rel="noreferrer">Talent Twins ↗</a>
-            <a href="https://www.aiatalentvault.com" target="_blank" rel="noreferrer">Talent Vault ↗</a>
-            <a href="https://www.aiatalentexchange.com" target="_blank" rel="noreferrer">Talent Exchange ↗</a>
+            <a href="https://aia-talent.turner-globa-6193.chatgpt.site/" target="_blank" rel="noreferrer">Talent Twins ↗</a>
+            <a href="https://aia-talent-vault-hq.turner-globa-6193.chatgpt.site/" target="_blank" rel="noreferrer">Talent Vault ↗</a>
+            <a href="https://aia-talent-exchange.turner-globa-6193.chatgpt.site/" target="_blank" rel="noreferrer">Talent Exchange ↗</a>
           </div>
           <div>
             <h3>Solutions</h3>
