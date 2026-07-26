@@ -495,7 +495,7 @@ summary:focus-visible {
 
 .platform-card {
   display: flex;
-  min-height: 510px;
+  min-height: 550px;
   flex-direction: column;
   overflow: hidden;
   border: 1px solid rgba(7, 16, 24, 0.11);
@@ -505,90 +505,22 @@ summary:focus-visible {
 
 .card-visual {
   position: relative;
-  display: grid;
-  height: 220px;
+  aspect-ratio: 1.72;
   overflow: hidden;
-  place-items: center;
-  background:
-    radial-gradient(circle at 50% 50%, rgba(31, 103, 255, 0.46), transparent 34%),
-    linear-gradient(145deg, #02080d, #051f3d);
-  color: #fff;
+  flex: 0 0 auto;
+  background-color: #01070c;
+  background-image: url("/aia-platform-reference.png");
+  background-position: 15.77% 50.78%;
+  background-repeat: no-repeat;
+  background-size: 407.8% auto;
 }
 
 .vault .card-visual {
-  background:
-    radial-gradient(circle at 50% 50%, rgba(65, 171, 111, 0.35), transparent 32%),
-    linear-gradient(145deg, #02080d, #0b2a23);
+  background-position: 50.08% 50.78%;
 }
 
 .exchange .card-visual {
-  background:
-    radial-gradient(circle at 50% 50%, rgba(141, 87, 255, 0.42), transparent 32%),
-    linear-gradient(145deg, #02080d, #27184a);
-}
-
-.card-visual::before,
-.card-visual::after {
-  position: absolute;
-  border: 1px solid rgba(71, 130, 255, 0.25);
-  border-radius: 50%;
-  content: "";
-}
-
-.card-visual::before {
-  width: 250px;
-  height: 250px;
-}
-
-.card-visual::after {
-  width: 170px;
-  height: 170px;
-}
-
-.card-orbit {
-  position: absolute;
-  width: 220px;
-  height: 90px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
-  transform: rotate(-24deg);
-}
-
-.card-mark {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  width: 100px;
-  height: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 50%;
-  background: rgba(1, 7, 12, 0.7);
-  box-shadow: 0 0 42px rgba(59, 124, 255, 0.45);
-  place-content: center;
-  text-align: center;
-}
-
-.card-mark b {
-  color: var(--gold-light);
-  font-size: 0.78rem;
-  letter-spacing: 0.2em;
-}
-
-.card-mark strong {
-  font-size: 1.9rem;
-  font-weight: 500;
-}
-
-.card-visual > p {
-  position: absolute;
-  z-index: 2;
-  bottom: 12px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.59rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  background-position: 84.31% 50.78%;
 }
 
 .card-copy {

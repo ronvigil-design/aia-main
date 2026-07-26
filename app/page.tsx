@@ -192,14 +192,11 @@ function PlatformCard({
 }) {
   return (
     <article className={`platform-card ${company.className}`}>
-      <div className="card-visual">
-        <span className="card-orbit" aria-hidden="true" />
-        <div className="card-mark" aria-hidden="true">
-          <b>AIA</b>
-          <strong>{company.mark}</strong>
-        </div>
-        <p>{company.eyebrow.replace("AIA ", "")}</p>
-      </div>
+      <div
+        className="card-visual"
+        role="img"
+        aria-label={`${company.eyebrow} brand artwork`}
+      />
       <div className="card-copy">
         <div className="card-icon" aria-hidden="true">
           {company.mark}
