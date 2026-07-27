@@ -92,11 +92,20 @@ function Brand() {
   );
 }
 
+function HeaderBrand() {
+  return (
+    <a className="header-wordmark" href="#top" aria-label="AIA Talent home">
+      <span>AiA</span>
+      <strong>Talent</strong>
+    </a>
+  );
+}
+
 function Header() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <Brand />
+        <HeaderBrand />
         <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map(([label, href], index) => (
             <a
