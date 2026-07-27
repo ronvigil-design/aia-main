@@ -210,6 +210,22 @@ summary:focus-visible {
   text-transform: uppercase;
 }
 
+.header-brand {
+  display: block;
+  width: 110px;
+  height: 62px;
+  flex: 0 0 110px;
+  overflow: hidden;
+}
+
+.header-brand img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 49%;
+}
+
 .desktop-nav {
   display: flex;
   flex: 1;

@@ -92,11 +92,24 @@ function Brand() {
   );
 }
 
+function HeaderBrand() {
+  return (
+    <a className="header-brand" href="#top" aria-label="AIA Twins home">
+      <img
+        src="/aia-twins-header-logo.png"
+        alt=""
+        width="1250"
+        height="1250"
+      />
+    </a>
+  );
+}
+
 function Header() {
   return (
     <header className="site-header">
       <div className="nav-shell">
-        <Brand />
+        <HeaderBrand />
         <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map(([label, href], index) => (
             <a
