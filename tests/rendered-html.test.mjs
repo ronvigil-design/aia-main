@@ -33,7 +33,7 @@ test("server-renders the complete AIA Main website", async () => {
   assert.match(html, /The AI Agency for the Future of Talent/);
   assert.match(html, /The AIA Platform/);
   assert.match(html, /Join AIA/);
-  assert.match(html, /https:\/\/aia-talent\.turner-globa-6193\.chatgpt\.site\//);
+  assert.match(html, /https:\/\/ronvigil-design\.github\.io\/aia-talent-twins\//);
   assert.match(html, /https:\/\/aia-talent-vault-hq\.turner-globa-6193\.chatgpt\.site\//);
   assert.match(html, /https:\/\/aia-talent-exchange\.turner-globa-6193\.chatgpt\.site\//);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
