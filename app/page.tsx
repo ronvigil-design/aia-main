@@ -94,9 +94,9 @@ function Brand() {
 
 function HeaderBrand() {
   return (
-    <a className="header-wordmark" href="#top" aria-label="AIA Talent home">
+    <a className="header-wordmark" href="#top" aria-label="AIA Artists home">
       <span>AiA</span>
-      <strong>Talent</strong>
+      <strong>Artists</strong>
     </a>
   );
 }
