@@ -37,8 +37,8 @@ jobs:
       - name: Build static website
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: /aia-main
-          NEXT_PUBLIC_SITE_URL: https://ronvigil-design.github.io/aia-main
+          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_SITE_URL: https://www.aiatalent.com
         run: npm run build:pages
 
       - name: Upload static website

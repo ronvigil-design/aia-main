@@ -54,7 +54,8 @@ test("keeps GitHub Pages publishing configured as a static export", async () => 
   assert.match(nextConfig, /basePath/);
   assert.match(nextConfig, /assetPrefix/);
   assert.match(packageJson, /"build:pages":\s*"next build"/);
-  assert.match(workflow, /NEXT_PUBLIC_BASE_PATH:\s*\/aia-main/);
+  assert.match(workflow, /NEXT_PUBLIC_BASE_PATH:\s*""/);
+  assert.match(workflow, /NEXT_PUBLIC_SITE_URL:\s*https:\/\/www\.aiatalent\.com/);
   assert.match(workflow, /npm run build:pages/);
   assert.match(workflow, /actions\/upload-pages-artifact@v4/);
   assert.match(workflow, /actions\/deploy-pages@v4/);
