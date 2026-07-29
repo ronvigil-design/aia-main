@@ -46,6 +46,7 @@ export default function RootLayout({
   const assetVariables = {
     "--aia-hero-image": `url("${basePath}/aia-hero.png")`,
     "--aia-platform-image": `url("${basePath}/aia-platform-reference.png")`,
+    "--aia-twins-card-image": `url("${basePath}/aia-twins-card-logo.png")`,
   } as React.CSSProperties;
 
   return (
