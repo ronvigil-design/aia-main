@@ -27,7 +27,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-geist), Arial, sans-serif;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -322,7 +322,7 @@ summary:focus-visible {
 }
 
 .hero-image {
-  background-image: url("/aia-hero.png");
+  background-image: var(--aia-hero-image);
   background-position: center;
   background-size: cover;
   transform: scale(1.015);
@@ -523,7 +523,7 @@ summary:focus-visible {
   overflow: hidden;
   flex: 0 0 auto;
   background-color: #01070c;
-  background-image: url("/aia-platform-reference.png");
+  background-image: var(--aia-platform-image);
   background-position: 15.77% 50.78%;
   background-repeat: no-repeat;
   background-size: 407.8% auto;

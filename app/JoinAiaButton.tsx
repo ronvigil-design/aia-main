@@ -30,6 +30,7 @@ export function JoinAiaButton({
     if (!isOpen) return;
 
     const previousOverflow = document.body.style.overflow;
+    const trigger = triggerRef.current;
     document.body.style.overflow = "hidden";
     const focusTimer = window.setTimeout(() => firstFieldRef.current?.focus(), 0);
 
@@ -43,7 +44,7 @@ export function JoinAiaButton({
       window.clearTimeout(focusTimer);
       document.body.style.overflow = previousOverflow;
       document.removeEventListener("keydown", handleEscape);
-      triggerRef.current?.focus();
+      trigger?.focus();
     };
   }, [isOpen]);
 
