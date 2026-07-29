@@ -35,7 +35,7 @@ test("server-renders the complete AIA Main website", async () => {
   assert.match(html, /Join AIA/);
   assert.match(html, /https:\/\/ronvigil-design\.github\.io\/aia-talent-twins\//);
   assert.match(html, /https:\/\/ronvigil-design\.github\.io\/aia-talent-vault\//);
-  assert.match(html, /https:\/\/aia-talent-exchange\.turner-globa-6193\.chatgpt\.site\//);
+  assert.match(html, /https:\/\/ronvigil-design\.github\.io\/aia-talent-exchange\//);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
 });
 

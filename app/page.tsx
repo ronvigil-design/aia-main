@@ -28,7 +28,7 @@ const platformCompanies = [
     className: "exchange",
     description:
       "Connect approved digital talent with qualified global opportunities and clear commercial terms.",
-    href: "https://aia-talent-exchange.turner-globa-6193.chatgpt.site/",
+    href: "https://ronvigil-design.github.io/aia-talent-exchange/",
     cta: "Visit Talent Exchange",
   },
 ];
@@ -76,7 +76,7 @@ const navItems = [
   ["Home", "#top"],
   ["Talent Twins", "https://ronvigil-design.github.io/aia-talent-twins/"],
   ["Talent Vault", "https://ronvigil-design.github.io/aia-talent-vault/"],
-  ["Talent Exchange", "https://aia-talent-exchange.turner-globa-6193.chatgpt.site/"],
+  ["Talent Exchange", "https://ronvigil-design.github.io/aia-talent-exchange/"],
   ["For Talent", "#talent"],
   ["For Agencies", "#agencies"],
   ["Legacy", "#legacy"],
@@ -463,7 +463,7 @@ export default function Home() {
             <h3>AIA Platform</h3>
             <a href="https://ronvigil-design.github.io/aia-talent-twins/" target="_blank" rel="noreferrer">Talent Twins ↗</a>
             <a href="https://ronvigil-design.github.io/aia-talent-vault/" target="_blank" rel="noreferrer">Talent Vault ↗</a>
-            <a href="https://aia-talent-exchange.turner-globa-6193.chatgpt.site/" target="_blank" rel="noreferrer">Talent Exchange ↗</a>
+            <a href="https://ronvigil-design.github.io/aia-talent-exchange/" target="_blank" rel="noreferrer">Talent Exchange ↗</a>
           </div>
           <div>
             <h3>Solutions</h3>
