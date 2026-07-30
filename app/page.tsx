@@ -95,7 +95,7 @@ function Brand() {
 function HeaderBrand() {
   return (
     <a className="header-wordmark" href="#top" aria-label="AI Artists home">
-      <span>AiA</span>
+      <span>Ai A</span>
       <strong>rtists</strong>
     </a>
   );

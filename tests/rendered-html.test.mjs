@@ -32,7 +32,7 @@ test("server-renders the complete AIA Main website", async () => {
   assert.match(html, /<title>AIA Main — The AI Agency for the Future of Talent<\/title>/i);
   assert.match(html, /The AI Agency for the Future of Talent/);
   assert.match(html, /AI Artists home/);
-  assert.match(html, /<span>AiA<\/span><strong>rtists<\/strong>/);
+  assert.match(html, /<span>Ai A<\/span><strong>rtists<\/strong>/);
   assert.match(html, /The AIA Platform/);
   assert.match(html, /Join AIA/);
   assert.match(html, /https:\/\/ronvigil-design\.github\.io\/aia-talent-twins\//);
